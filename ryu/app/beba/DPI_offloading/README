@@ -1,0 +1,8 @@
+To start the controller application run:
+sudo ryu-manager DPI_offloading.py
+
+You need Scapy Python Library to run the controller application.
+The controller program will write on the file flow_table.csv the flows statistics collected from the switch.
+
+To start Mininet use the script startMininet.sh, it creates a single switch with 2 hosts, Host 1 is a normal host, Host 2 is the DPI and a NAT node:
+sudo startMininet.sh
